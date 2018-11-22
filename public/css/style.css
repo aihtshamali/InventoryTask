@@ -1,0 +1,164 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-style:normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+a.active, a:focus,button:focus, button.active{
+    outline: none;
+}
+a{
+    text-decoration:none;
+}
+a:focus,a:hover,a:active{
+    outline: 0;
+    box-shadow: 0;
+}
+a:focus, a:hover{
+    text-decoration: none;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+a,button{
+    text-decoration: none;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+a:hover{
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+p{
+    margin: 0;
+}
+input:focus,
+select:focus,
+textarea:focus{
+    outline: none;
+}
+
+/*======= Custom Css ========*/
+
+/* Header
+--------------------------*/
+.invoice-edit{
+    padding:50px 0;
+}
+.invoice-edit .form-control{
+    border-radius:0;
+    border:2px solid #ddd;
+    box-shadow: none;
+    resize: none;
+}
+.invoice-edit select{
+    background-color: rgba(204, 204, 204, 0.26);
+}
+.invoice-logo {
+    position: relative;
+}
+.invoice-logo input {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.invoice-title .status{
+    width: 70px;
+    float: left;
+    margin-right: 15px;
+}
+.invoice-title .invoiceTit{
+    overflow: hidden;
+}
+.invoice-edit h1{
+    margin-bottom: 45px;
+    text-transform: uppercase;
+}
+.invoiceNumber {
+    position: relative;
+}
+.invoiceNumber span {
+    position: absolute;
+    width: 40px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ddd;
+    text-align: center;
+    line-height: 34px;
+}
+.invoiceNumber .form-control{
+    padding-left: 43px;
+}
+.invoice-header{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.invoice-edit hr{
+    border-top: 2px solid #ddd;
+}
+.invoice-total .row {
+    border-bottom: 2px solid #ddd;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 8px 0;
+}
+.invoice-total .row:first-child {
+    border-top: 2px solid #ddd;
+}
+.invoice-edit .hrb hr{
+    margin-bottom: 0;
+}
+.invoice-total [class*='col']{
+    text-align: right;
+    font-weight: bold;
+}
+.clonedInput {
+    display: inline-block;
+    width: 100%;
+}
+.invoice-detail #entry{
+    display: none;
+}
+.invoice-edit .Due,
+.invoice-edit .Paid,
+.invoice-edit .Process{
+        height: 34px;
+        text-align: center;
+        line-height: 34px;
+        display: block;
+        color:#fff;
+        font-weight: bold;
+}
+.invoice-edit .Due{
+    background-color: #ed0101;
+}
+.invoice-edit .Paid{
+    background-color: green;
+}
+.invoice-edit .Process{
+    background-color: #f0ad4e;
+}
+.invoice-edit button[type="submit"] {
+    width: 120px;
+    font-size: 17px;
+    margin-left: auto;
+    display: table;
+}
