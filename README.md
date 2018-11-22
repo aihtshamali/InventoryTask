@@ -9,6 +9,9 @@ Laravel Task
 composer install
 npm install
 
+# Make new DataBase
+name: inventory
+
 # Run Migrations
 php artisan migrate
 
